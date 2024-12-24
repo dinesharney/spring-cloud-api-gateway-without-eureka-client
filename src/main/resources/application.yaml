@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: header-matching-route
+          uri: http://localhost:8081
+          predicates:
+            - Header=X-Custom-Header, Value1
+          filters:
+            - AddRequestHeader=X-Processed-By, Service1
+        - id: fallback-route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/**
