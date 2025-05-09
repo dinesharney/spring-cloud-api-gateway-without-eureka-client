@@ -12,19 +12,4 @@ This project demonstrates how to use **Spring Cloud Gateway** as an API Gateway 
 - upports forwarding to multiple services
 - Easily extendable for filters, CORS, rate limiters
 
----
-
-## 📁 Project Structure
-spring-cloud-api-gateway/
-├── src/
-│ └── main/
-│ ├── java/
-│ │ └── com/
-│ │ └── example/
-│ │ └── gateway/
-│ │ └── GatewayApplication.java
-│ └── resources/
-│ └── application.yml
-├── pom.xml
-└── README.md
 
